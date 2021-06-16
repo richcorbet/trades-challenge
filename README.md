@@ -19,7 +19,8 @@ networkx
 ### How to run
 Assuming Python3 is already installed
 
-``` git pull ```
+``` git clone https://github.com/richcorbet/trades-challenge.git ```
+
 ```cd trades-challenge```
 
 
