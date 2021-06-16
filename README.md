@@ -19,6 +19,10 @@ networkx
 ### How to run
 Assuming Python3 is already installed
 
+``` git clone https://github.com/richcorbet/trades-challenge.git ```
+
+```cd trades-challenge```
+
 
 ##### Install Dependencies 
 ```pip3 install networkx```
