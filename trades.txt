@@ -1,0 +1,6 @@
+Trade: 0 - Buy: 1.2546 -> Sell: 1.2796 = Profit: 0.025   ---- start: 0 min, end: 58 min
+Trade: 1 - Buy: 1.2635 -> Sell: 1.2845 = Profit: 0.021   ---- start: 64 min, end: 94 min
+Trade: 2 - Buy: 1.275 -> Sell: 1.2929 = Profit: 0.0179   ---- start: 101 min, end: 138 min
+Trade: 3 - Buy: 1.2846 -> Sell: 1.3016 = Profit: 0.017   ---- start: 139 min, end: 169 min
+Trade: 4 - Buy: 1.2943 -> Sell: 1.3728 = Profit: 0.0785   ---- start: 178 min, end: 228 min
+total profit: 0.1594
