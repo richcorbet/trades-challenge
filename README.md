@@ -1,4 +1,4 @@
-## Birarri Techical Challenge
+## Biarri Techical Challenge
 ####Trading Algorithm
 
 Given historical data, attempt to determine the best trades that could have been made to maximise profits.

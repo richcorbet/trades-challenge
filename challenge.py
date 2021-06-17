@@ -21,24 +21,30 @@ def build_graph(data):
     # create Directed Graph 
     graph = nx.DiGraph()
 
-    # iterable range of time increments
-    time_range = range(30)
-
     data_length = len(data)
 
-    # TODO: last 60 mins to be handled properly
-    final = data_length - 60
+    final_batch = data_length - 60
+
+    end_idx = data_length - 30
+
+    offset = 30 
 
     for idx, val in enumerate(data):
 
         if idx%100 == 0:
             print(idx)
 
-        if idx >= final:
+        if idx >= end_idx:
             break
+            
+        # iterable range of time increments - possible trade close time points
+        time_range = range(30)
+        
+        if idx >= final_batch:
+            time_range = range(30 - (idx-final_batch))
         
         # good trades are profitable - only include if trade val > 0
-        trade_edges = [(idx, idx+30+x, (data[idx+30+x]-val)) for x in time_range if data[idx+30+x]-val > 0 ]
+        trade_edges = [(idx, idx+offset+x, (data[idx+offset+x]-val)) for x in time_range if data[idx+offset+x]-val > 0 ]
 
         # wait for a good trade is zero cost or benefit
         # add one edge from current minute to next with zero weight
@@ -92,9 +98,8 @@ def write_trades(path, data):
             if idx > path_len-2:
                 break
 
+            # ignore wait steps - next step is greater than 30 min
             if path[idx+1] >= i+30:
-                if data[path[idx+1]] - data[i] > 0:
-
                     trades_file.write("Trade: %d - Buy: %s -> Sell: %s = Profit: %s   ---- start: %s min, end: %s min\n" % (trade_idx, data[i], data[path[idx+1]], "{:.4}".format(data[path[idx+1]] - data[i]), i, path[idx+1]))
                     total_profit += data[path[idx+1]] - data[i]
                     trade_idx += 1

@@ -67,6 +67,7 @@ Trade: 65 - Buy: 1.47051 -> Sell: 1.47201 = Profit: 0.0015   ---- start: 3319 mi
 Trade: 66 - Buy: 1.46262 -> Sell: 1.48164 = Profit: 0.01902   ---- start: 3366 min, end: 3404 min
 Trade: 67 - Buy: 1.47859 -> Sell: 1.47911 = Profit: 0.00052   ---- start: 3408 min, end: 3438 min
 Trade: 68 - Buy: 1.46833 -> Sell: 1.47075 = Profit: 0.00242   ---- start: 3442 min, end: 3472 min
-Trade: 69 - Buy: 1.45778 -> Sell: 1.46651 = Profit: 0.00873   ---- start: 3476 min, end: 3530 min
-Trade: 70 - Buy: 1.45988 -> Sell: 1.46345 = Profit: 0.00357   ---- start: 3534 min, end: 3593 min
-total profit: 1.139
+Trade: 69 - Buy: 1.45851 -> Sell: 1.45902 = Profit: 0.00051   ---- start: 3474 min, end: 3505 min
+Trade: 70 - Buy: 1.45367 -> Sell: 1.46535 = Profit: 0.01168   ---- start: 3510 min, end: 3544 min
+Trade: 71 - Buy: 1.45182 -> Sell: 1.46432 = Profit: 0.0125   ---- start: 3564 min, end: 3594 min
+total profit: 1.151
