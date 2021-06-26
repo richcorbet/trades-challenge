@@ -1,4 +1,4 @@
-## Biarri Techical Challenge
+## Techical Challenge
 ####Trading Algorithm
 
 Given historical data, attempt to determine the best trades that could have been made to maximise profits.
@@ -12,8 +12,9 @@ Given historical data, attempt to determine the best trades that could have been
 ### Language Choice - PYTHON
 
 ### Dependencies
-python3
-networkx
+- python3
+- networkx
+- pytest
 
 
 ### How to run
@@ -25,10 +26,10 @@ Assuming Python3 is already installed
 
 
 ##### Install Dependencies 
-```pip3 install networkx```
+```pip3 install networkx pytest```
 
 or
-```pip install networkx```
+```pip install networkx pytest```
 
 
 ##### Run Code 
@@ -39,3 +40,13 @@ or
 
 ##### Review Results
 The code outputs the trade results to the file ```trades.txt```
+
+
+### Tests
+
+#### tests file
+```test_challenge.py```
+
+#### How to Run
+from repo folder run pytest
+```pytest```
